@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CPU</title>
+</head>
+<body>
+<h2>Cpu: </h2>
+<hr/>
+<table border = "1">
+    <tr>
+        <td>第几块Cpu信息</td>
+        <td>CPU的总量MHz:</td>
+        <td>CPU生产商:</td>
+        <td>CPU类别:</td>
+        <td>CPU缓存数量:</td>
+        <td>CPU使用率</td>
+    </tr>
+    <tr th:each="cPu: ${CPUList}">
+        <td th:text="${cPu.cpu}"></td>
+        <td th:text="${cPu.cpu2}"></td>
+        <td th:text="${cPu.cpu3}"></td>
+        <td th:text="${cPu.cpu4}"></td>
+        <td th:text="${cPu.cpu5}"></td>
+        <td th:text="${cPu.cpu6}"></td>
+    </tr>
+</table>
+<div class="left">
+    <nav>
+        <ul class="list">
+            <li><a th:href="@{list}">返回列表</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

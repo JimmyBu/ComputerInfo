@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>内存</title>
+</head>
+<body>
+<h2>Ram: </h2>
+<hr/>
+<table border = "1">
+    <tr>
+        <td>内存总量:</td>
+        <td>当前内存使用量:</td>
+        <td>当前内存剩余量:</td>
+        <td>交换区总量:</td>
+        <td>当前交换区使用量:</td>
+        <td>当前交换区剩余量:</td>
+        <td>当前内存使用率:</td>
+        <td>当前内存剩余率:</td>
+    </tr>
+    <tr>
+        <td th:text="${ram}"></td>
+        <td th:text="${ram2}"></td>
+        <td th:text="${ram3}"></td>
+        <td th:text="${ram4}"></td>
+        <td th:text="${ram5}"></td>
+        <td th:text="${ram6}"></td>
+        <td th:text="${ram7}"></td>
+        <td th:text="${ram8}"></td>
+    </tr>
+</table>
+<div class="left">
+    <nav>
+        <ul class="list">
+            <li><a th:href="@{list}">返回列表</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

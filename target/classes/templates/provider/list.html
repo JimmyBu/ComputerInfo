@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>各项数据查看</title>
+</head>
+<body>
+<header class="publicHeader">
+    <div class="left">
+        <h2 class = "LeftH2"><span class="span1"></span>列表<span></span></h2>
+        <nav>
+            <ul class="list">
+                <li><a th:href="@{CPU}">Cpu查看</a></li>
+                <li><a th:href="@{RAM}">Ram查看</a></li>
+                <li><a th:href="@{ioUsage}">ioUsage查看</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+</body>
+</html>
